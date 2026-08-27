@@ -1,64 +1,151 @@
-# Society Management System
+# 🏢 Society Management System — C++ DSA Project
 
-A C++ based Society Management System designed to manage residents, members, events, requests, payments, finances, and other society-related activities through a simple command-line interface.
+A console-based Society Management System developed in C++ to manage societies, members, events, membership requests, and finances.
+
+The project was built to apply fundamental **Data Structures, Algorithms, Object-Oriented Programming, pointers, dynamic memory management, and file handling** concepts to a practical management system.
+
+---
 
 ## 📌 Overview
 
-The Society Management System provides a centralized way to manage different aspects of a residential society. The system allows users to perform common management tasks while storing data using files.
+The Society Management System provides a centralized way to manage different aspects of a university society environment.
+
+The system supports multiple user roles, including:
+
+- **Admin**
+- **Society President**
+- **Member**
+
+Each role has different permissions and functionality.
+
+The project uses custom implementations of several fundamental data structures instead of relying on ready-made container classes for the core functionality.
+
+---
 
 ## ✨ Features
 
-- 👤 User and member management
-- 🏠 Society management
-- 📅 Upcoming and past event management
-- 📝 Request management
-- 💰 Payment and transaction management
-- 📊 Financial record management
-- 💾 File-based data storage
-- 🔍 Search and management functionality
-- 🖥️ Command-line interface
+### 🔐 Authentication
 
-## 🛠️ Technologies Used
+- Role-based login system
+- Admin, President, and Member accounts
+- Password hashing
+- 3-attempt login system
+- Account lockout after failed attempts
+- User registration
+- Society association for Presidents and Members
 
-- **C++**
-- File Handling
-- Object-Oriented Programming
-- Data Structures
-- Standard Template Library (STL)
+### 🏢 Society Management
 
-## 🧠 Concepts Used
+- View all societies
+- Add new societies
+- Delete societies
+- Store society information
+- Track society budgets
+- Track society presidents
+- Search for societies
 
-This project demonstrates concepts such as:
+### 👥 Member Management
 
-- Classes and Objects
-- Functions
-- Arrays / Data Structures
-- File Handling
-- Input Validation
-- Searching and Sorting
-- Modular Programming
-- Object-Oriented Programming
+- View society members
+- Add approved members
+- Store member information
+- Track member society
+- Store joining dates
+- Process membership requests
 
-## 📂 Project Structure
+### 📝 Membership Requests
+
+- Members can request to join a society
+- Requests are stored in a Queue
+- Requests are processed using FIFO order
+- Admins/Presidents can approve or reject requests
+
+### 📅 Event Management
+
+- Schedule upcoming events
+- Assign event priority
+- Store event date and venue
+- Mark events as completed
+- Move completed events to past-event history
+- View upcoming events
+- View past events
+
+### 💰 Financial Management
+
+- Record income and expenses
+- Store transaction descriptions
+- Track transaction dates
+- Calculate total income
+- Calculate total expenses
+- Calculate net balance
+- View financial records by society
+
+### 📊 Society Rankings
+
+- Rank societies according to their budget
+- Implemented using Quick Sort
+- Displays ranked societies with their budgets
+
+### 💾 Data Persistence
+
+System data is stored in files so that information remains available after the program is closed.
+
+The system saves and loads:
+
+- Users
+- Societies
+- Members
+- Membership requests
+- Upcoming events
+- Past events
+- Financial transactions
+
+### 🎨 Console Interface
+
+- ANSI color-coded output
+- Formatted tables
+- Structured menus
+- Success, error, and information messages
+- Separate dashboards for each user role
+
+---
+
+# 🧠 Data Structures & Algorithms
+
+One of the main goals of this project was to implement and apply fundamental data structures and algorithms in a practical application.
+
+| Data Structure / Algorithm | Application |
+|---|---|
+| **Hash Table** | User authentication and credential lookup |
+| **Linked List** | Societies |
+| **Linked List** | Members |
+| **Linked List** | Financial transactions |
+| **Queue** | Membership requests |
+| **Stack** | Past event history |
+| **Priority Queue** | Upcoming event scheduling |
+| **Quick Sort** | Ranking societies by budget |
+| **Searching** | Finding users and societies |
+| **File Handling** | Persistent data storage |
+
+---
+
+## 🔎 Data Structure Implementation
+
+### 1. Hash Table
+
+A custom hash table is used for storing and retrieving user accounts.
+
+It supports:
+
+- User insertion
+- User lookup
+- Authentication
+- Duplicate username checking
+- Password hashing
+
+Hash collisions are handled using **separate chaining with linked lists**.
+
+**Used for:**
 
 ```text
-society-management-system/
-│
-├── society_management_system.cpp
-├── societies.dat
-├── societies.txt
-├── users.dat
-├── users.txt
-├── members.dat
-├── members.txt
-├── payments.txt
-├── transactions.txt
-├── finances.dat
-├── finances.txt
-├── requests.dat
-├── requests.txt
-├── upcoming_events.dat
-├── upcoming_events.txt
-├── past_events.dat
-├── past_events.txt
-└── README.md
+Username → Password → Role → Society
