@@ -1,0 +1,2 @@
+Tom Brown|tom@email.com|Arts Club|02/12/2024
+Lisa Davis|lisa@email.com|Sports Club|03/12/2024

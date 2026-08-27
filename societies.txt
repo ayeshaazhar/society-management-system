@@ -1,0 +1,3 @@
+Sports Club|admin|Athletics and Fitness|12000|0
+DECS Society|Minal|drama society|0|0
+ACM-women|Wareesha||2000|0

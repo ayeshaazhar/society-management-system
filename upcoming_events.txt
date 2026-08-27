@@ -1,0 +1,5 @@
+ID1001|coders||10/12/2025|fast|10|2000
+ID1005|cupers cup 2||09/09/2024||9|4000
+E003|Sports Day|Sports Club|30/12/2024|Stadium|8|3000
+E002|Art Festival|Arts Club|25/12/2024|Campus Ground|7|1500
+ID1001|PROCOM||11 12 2025|Fast|9|300

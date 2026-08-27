@@ -1,0 +1,6 @@
+1|System Admin|admin@fast.edu|Admin|admin123
+M001|John Doe|john@email.com|Tech Society|01/01/2024
+M002|Jane Smith|jane@email.com|Arts Club|15/01/2024
+M003|Mike Johnson|mike@email.com|Tech Society|20/02/2024
+ID1001|Sarah Wilson|sarah@email.com|Tech Society|09/12/2025
+ID1002|wania|wania@fast.edu||09/12/2025

@@ -1,0 +1,5 @@
+T001|Tech Society|Income|5000|Sponsorship|01/01/2024
+T002|Tech Society|Expense|1500|Equipment|15/01/2024
+T003|Arts Club|Income|3000|Membership Fees|01/02/2024
+ID1003||Income|3000|for event budget|09/12/2025
+ID1004||Expense|200|tea bill|09/12/2025
